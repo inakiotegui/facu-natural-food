@@ -1,0 +1,131 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 4rem 0;
+    background-color: #f2ebe3;
+}
+
+.contact-title {
+    font-size: 6rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    color: #214b8b;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    gap: 1.5rem;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-left {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.input-field,
+.textarea-field {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #b2cbed;
+}
+
+.textarea-field {
+    height: 200px;
+    resize: none;
+}
+
+.input-field::placeholder,
+.textarea-field::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: #214b8b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #17335e;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-up {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #214b8b;
+    color: white;
+    font-size: 2.5rem;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    background-color: #17335e;
+}
+
+@media (max-width: 600px) {
+    .contact-title {
+        font-size: 4rem;
+    }
+
+    .form {
+        width: 90%;
+    }
+
+    .input-field,
+    .textarea-field {
+        width: auto;
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .contact-title {
+        font-size: 7rem;
+    }
+}

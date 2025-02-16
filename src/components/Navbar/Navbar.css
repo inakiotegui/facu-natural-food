@@ -1,0 +1,164 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 17px;
+    padding: 1rem;
+    color: white;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.logo-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    flex-shrink: 0;
+    padding-left: 3rem;
+}
+
+.logo img {
+    width: 170px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo img:hover {
+    transform: scale(0.9);
+}
+
+.nav-container {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4375rem;
+    font-weight: 400;
+    text-decoration: none;
+    background: none;
+    border: none;
+    color: #173a64;
+    cursor: pointer;
+    padding: 8px 46px 2px 46px;
+}
+
+.nav-links a:hover{
+    color: #0f253f;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: #173a64;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.mobile-menu li {
+    list-style: none;
+    padding: 10px;
+}
+
+.mobile-menu a {
+    background: none;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    color: #173a64;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 0;
+        width: 100%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+    
+    .menu-btn {
+        display: block;
+    }
+
+    .logo {
+        padding: 1rem;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+}
+
+@media (min-width:601px) and (max-width: 1024px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .nav-links {
+        display: none;
+    }
+    
+    .menu-btn {
+        display: block;
+    }
+
+    .logo {
+        padding: 1rem;
+    }
+
+    .logo img {
+        width: 160px;
+    }
+}

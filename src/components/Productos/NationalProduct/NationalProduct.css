@@ -1,0 +1,113 @@
+.national-product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 6rem 0;
+    gap: 2rem;
+    background-color: #f2ebe3;
+}
+
+.national-product-images {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.national-product-image {
+    width: 650px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.national-product-info {
+    max-width: 40%;
+    text-align: left;
+}
+
+.national-product-title {
+    color: #214b8b;
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+.national-product-subtitle {
+    color: #cfb655;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+}
+
+.national-product-description {
+    color: #214b8b;
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0;
+    margin-top: 1rem
+}
+
+.national-product-info {
+    opacity: 0;
+    transform: translateX(80px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.national-product-info.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media (max-width: 600px) {
+    .national-product {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .national-product-image {
+        width: 23rem;
+        border-radius: 20px;
+    }
+
+    .national-product-info {
+        text-align: center;
+        max-width: 85%;
+    }
+
+    .national-product-title {
+        font-size: 3.3rem;
+    }
+
+    .national-product-subtitle {
+        margin: 1rem 0;
+        font-size: 2.5rem;
+    }
+
+    .national-product-description {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .national-product-image {
+        width: 30rem;
+        border-radius: 25px;
+    }
+
+    .national-product-title {
+        font-size: 3.3rem;
+    }
+
+    .national-product-subtitle {
+        margin: 1rem 0;
+        font-size: 2.5rem;
+    }
+
+    .national-product-description {
+        font-size: 1.5rem;
+    }
+}

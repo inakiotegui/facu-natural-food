@@ -1,0 +1,229 @@
+.feature-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    padding-bottom: 6rem;
+    background-image: url('../../../assets/backgrounds/bg3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.feature-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+    flex: 1;
+    margin: 5rem;
+}
+
+.feature-top img {
+    width: 800px;
+    height: auto;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.4));
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.feature-top img.animated-left {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.feature-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 40%;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.feature-text.animated-right {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.feature-text h1 {
+    font-size: 3.2rem;
+    margin: 0;
+    color: #214b8b;
+    font-weight: 800;
+    margin-block-start: 0;
+    display: flex;
+}
+
+.feature-text h2 {
+    font-size: 2.5rem;
+    color: #c4a528;
+    font-weight: 400;
+    margin: 0;
+}
+
+.feature-text p {
+    font-size: 1.5rem;
+    color: #214b8b;
+    max-width: 600px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.feature-bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3rem;
+    gap: 4rem;
+}
+
+.feature-card {
+    position: relative;
+    width: 280px;
+    padding: 2rem 1rem;
+    background: #cfb655;
+    border-radius: 15px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.feature-card.animated-bottom {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.feature-card::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    background: #cfb655;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-icon-container {
+    position: absolute;
+    top: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65px;
+    height: 65px;
+}
+
+.feature-icon-container img{
+    max-width: 50px;
+}
+
+.feature-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.feature-text-p {
+    font-size: 2.2rem;
+    line-height: 1;
+    font-weight: 400;
+    color: #214b8b;
+    text-align: center;
+    margin: 0;
+}
+
+@media (min-width:601px) and (max-width: 1024px) {
+    .feature-container {
+        padding: 2rem 0;
+    }
+
+    .feature-top img {
+        max-width: 600px;
+    }
+
+    .feature-top {
+        flex-direction: column;
+        text-align: center;
+        margin: 3rem 0;
+    }
+
+    .feature-text {
+        max-width: 80%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .feature-bottom {
+        gap: 1rem;
+    }
+    
+    .feature-text-p {
+        font-size: 1.8rem;
+    }
+
+    .feature-card {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .feature-container {
+        padding: 2rem 0;
+    }
+
+    .feature-top {
+        flex-direction: column;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .feature-top img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .feature-text {
+        max-width: 90%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .feature-text h1{
+        font-size: 2rem;
+    }
+
+    .feature-text h2{
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+
+    .feature-bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .feature-card {
+        width: 90%;
+        max-width: 300px;
+    }
+}
