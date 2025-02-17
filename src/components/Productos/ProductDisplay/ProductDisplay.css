@@ -175,3 +175,34 @@
         font-size: 1.1rem;
     }
 }
+
+@media (min-width: 1025px) and (max-width: 1480px) {
+    .product-title {
+        font-size: 8rem;
+    }
+
+    .product-subtitle {
+        font-size: 7rem;
+        margin-top: -2rem;
+    }
+
+    .image-container img {
+        width: 450px;
+    }
+
+    .product-description {
+        gap: 2.5rem;
+    }
+
+    .description-value {
+        font-size: 3rem;
+    }
+
+    .description-line {
+        height: 90px;
+    }
+
+    .description-name {
+        font-size: 1.1rem;
+    }
+}

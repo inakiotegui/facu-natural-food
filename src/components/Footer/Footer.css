@@ -74,3 +74,17 @@
         width: 140px;
     }
 }
+
+@media (min-width: 1025px) and (max-width: 1480px) {
+    .footer {
+        padding: 4rem;
+    }
+
+    .footer-links a {
+        font-size: 1.7rem;
+    }
+
+    .footer-logo {
+        width: 160px;
+    }
+}

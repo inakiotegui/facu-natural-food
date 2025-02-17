@@ -227,3 +227,47 @@
         max-width: 300px;
     }
 }
+
+@media (min-width: 1025px) and (max-width: 1480px) {
+    .feature-container {
+        padding: 3rem 1rem;
+    }
+
+    .feature-top {
+        gap: 1.5rem;
+        margin: 4rem;
+    }
+
+    .feature-top img {
+        width: 700px;
+    }
+
+    .feature-text {
+        max-width: 50%;
+    }
+
+    .feature-text h1 {
+        font-size: 3rem;
+    }
+
+    .feature-text h2 {
+        font-size: 2.3rem;
+    }
+
+    .feature-text p {
+        font-size: 1.4rem;
+    }
+
+    .feature-bottom {
+        gap: 2rem;
+    }
+
+    .feature-card {
+        width: 260px;
+        padding: 1.8rem 1rem;
+    }
+
+    .feature-text-p {
+        font-size: 2rem;
+    }
+}
