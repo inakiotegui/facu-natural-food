@@ -69,7 +69,6 @@ export default function Navbar() {
             <li key={item.id}>
               <a
                 href={item.path}
-                className={({ isActive }) => (isActive ? "active" : "")}
                 onClick={() => setActive(item.id)}
               >
                 {item.label}
@@ -87,7 +86,6 @@ export default function Navbar() {
             <li key={item.id}>
               <a
                 href={item.path}
-                className={active === item.id ? "active" : ""}
                 onClick={(e) => {
                   e.preventDefault();
                   const targetId = item.path.substring(1);

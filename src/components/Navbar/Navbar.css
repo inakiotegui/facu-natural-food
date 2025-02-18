@@ -42,7 +42,8 @@
 }
 
 .logo img {
-    width: 170px;
+    width: 10vw;
+    max-width: 170px;
     height: auto;
     transition: transform 0.3s ease-in-out;
 }

@@ -47,7 +47,6 @@
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-/* Activamos la animación del logo */
 .landing-logo.animated {
     opacity: 1;
     transform: translateY(0);
@@ -60,7 +59,6 @@
     gap: 1rem;
 }
 
-/* Ocultamos los botones por defecto */
 .landing-btn {
     padding: 0.7rem 5rem;
     font-family: "Roboto", sans-serif;
@@ -76,13 +74,11 @@
     transform: translateY(50px);
 }
 
-/* Animación del primer botón */
 .landing-btn.animated {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Efecto hover */
 .landing-btn:hover {
     background-color: lightgray;
 } 
@@ -98,9 +94,7 @@
 
     .landing-content {
         width: 100%;
-        height: auto;
-        justify-content: initial;
-        margin-top: 120px;
+        height: 90vh;
     }
 
     .landing-logo {
@@ -122,10 +116,8 @@
     }
 
     .landing-content {
-        width: 80%;
-        height: auto;
-        justify-content: initial;
-        margin-top: 100px;
+        width: 100%;
+        height: 90vh;
     }
 
     .landing-logo {
@@ -166,6 +158,7 @@
 
     .landing-btn {
         font-size: 24px;
+        padding: 0.7rem 4.5rem;
     }
 }
 
