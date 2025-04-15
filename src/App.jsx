@@ -8,11 +8,11 @@ function App() {
 
   return (
     <div className="app-container">
-    <Navbar />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Landing/>} />
       </Routes>
-    <Footer />
+      <Footer />
     </div>
   )
 }
