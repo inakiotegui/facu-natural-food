@@ -128,7 +128,7 @@
     .nav-links {
         display: none;
     }
-    
+
     .menu-btn {
         display: block;
     }
@@ -172,7 +172,7 @@
     .nav-links {
         display: none;
     }
-    
+
     .menu-btn {
         display: block;
     }
@@ -189,6 +189,7 @@
 @media (min-width: 1025px) and (max-width: 1480px) {
     .navbar {
         padding: 0.5rem 2rem;
+        right: 0;
     }
 
     .nav-links {
